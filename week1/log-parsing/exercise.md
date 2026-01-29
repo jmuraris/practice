@@ -464,7 +464,7 @@ Now you always have fresh logs in `access.log` file!
 
 ``` bash
 # 1. All POST requests to /login that failed
-grep -E "POST /login.*\" (401|403)" access.log
+grep -E "(401|403|)" access.log
 
 # 2. All requests from IPs starting with 203
 grep -E "^203\." access.log
