@@ -10,7 +10,7 @@
 
 ## 📚 Reference Code
 
-**Repository:** https://github.com/devopswithakhilesh/Jan26-devops-bootcamp/tree/main/week3/day1
+**Repository:** https://github.com/jmuraris/practice/edit/main/week3/day1/
 
 Clone this code and deploy using ASG + ALB.
 
@@ -18,9 +18,8 @@ Clone this code and deploy using ASG + ALB.
 
 ## 📋 Prerequisites
 
-- Week 1 VPC setup completed (`jan26-vpc`, public subnets)
-- Week 2 assignment completed (understand Flask deployment)
-- Domain from Week 2 (will use subdomain)
+- VPC setup completed (`jan26-vpc`, public subnets)
+- Domain from godaddy jaswanthmurari.xyz (will use subdomain)
 - Basic understanding of horizontal scaling
 
 ---
@@ -43,8 +42,8 @@ Domain → Route 53 → ALB → Target Group → ASG → EC2 Instances
 ### Step 1: Clone Reference Code
 
 ```bash
-git clone https://github.com/devopswithakhilesh/Jan26-devops-bootcamp.git
-cd Jan26-devops-bootcamp/week3/day1
+git clone https://github.com/jmuraris/practice.git
+cd practice/week3/day1
 ```
 
 ### Step 2: Review User Data Script
@@ -63,10 +62,10 @@ sudo yum install git -y
 
 # Clone repository
 cd /home/ec2-user
-git clone https://github.com/devopswithakhilesh/Jan26-devops-bootcamp.git
+git clone https://github.com/jmuraris/practice.git
 
 # Navigate to app directory
-cd Jan26-devops-bootcamp/week3/day1/app
+cd practice/week3/day1/app
 
 # Make script executable and run
 chmod u+x run.sh
@@ -79,7 +78,7 @@ chmod u+x run.sh
 
 ```bash
 # Create your repo
-git remote add origin https://github.com/YOUR_USERNAME/jan26-bootcamp.git
+git remote add origin https://github.com/jmuraris/practice.git
 git add .
 git commit -m "Week 3: ASG with ALB setup"
 git push -u origin main
