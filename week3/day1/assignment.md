@@ -120,12 +120,12 @@ Paste the user data script (modify GitHub URL to YOUR repo):
 
 ```bash
 #!/bin/bash
-sleep 30
+sleep 30  # Wait for system to initialize
 pwd > /home/ec2-user/install-logs.txt
 sudo yum install git -y
 cd /home/ec2-user
-git clone https://github.com/YOUR_USERNAME/jan26-bootcamp.git
-cd jan26-bootcamp/week3/day1/app
+git clone https://github.com/jmuraris/practice.git
+cd practice/week3/day1/app
 chmod u+x run.sh
 ./run.sh
 ```
